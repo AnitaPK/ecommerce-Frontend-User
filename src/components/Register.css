@@ -1,0 +1,53 @@
+.register-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* background: linear-gradient(to right, #f8f9fa, #e9ecef); */
+}
+
+.image-container {
+    flex: 1; /* Take up half the space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.form-container {
+    flex: 1; /* Take up half the space */
+    padding: 20px;
+    max-width: 400px; /* Limit max width of form */
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    width: 100%; /* Full width button */
+}
+
+@media (max-width: 768px) {
+    .register-container {
+        flex-direction: column; /* Stack image and form vertically on smaller screens */
+    }
+
+    .image-container,
+    .form-container {
+        flex: none; /* Remove flex-grow to stack */
+        width: 100%; /* Full width */
+        max-width: none; /* Remove max width */
+    }
+
+    .register-image {
+        margin-bottom: 20px; 
+    }
+}

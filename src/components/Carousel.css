@@ -1,0 +1,44 @@
+
+/* Common styles for the carousel items */
+.carousel-item {
+    height: 450px; 
+    position: relative; 
+}
+
+/* Fade effect styles */
+.fade .carousel-item {
+    opacity: 0; 
+    transition: opacity 1s ease-in-out; 
+}
+
+.fade .carousel-item.active {
+    opacity: 1; 
+}
+
+/* Slide effect styles */
+
+.slide .carousel-item {
+    transform: translateX(100%); 
+    transition: transform 0.5s ease-in-out; 
+}
+
+.slide .carousel-item.active {
+    transform: translateX(0); 
+}
+
+
+/* Image styles */
+.carousel-item img {
+    height: 100%; 
+    object-fit: cover; 
+}
+
+/* Optional: Caption styles for better visibility */
+.carousel-caption {
+    position: absolute; 
+    bottom: 20px; 
+    left: 20px; 
+    right: 20px; 
+    color: #fff; 
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7); 
+}
